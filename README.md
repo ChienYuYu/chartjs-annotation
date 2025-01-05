@@ -1,24 +1,7 @@
-# chartjs-annotation
+## 開兩個終端機
 
-## Project setup
-```
-npm install
-```
+1個npm run serve <br>
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+1個 cd ./apiServer <br>
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+然後執行 node index.js <br>
