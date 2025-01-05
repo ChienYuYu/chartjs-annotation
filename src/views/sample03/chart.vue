@@ -11,9 +11,19 @@ export default {
       labels: ['22:00','23:00',['00:00', '12/14'],'01:00','02:00','03:00','04:00','05:00','06:00','07:00'],
       datasets: [
         {
-          label: '溫度',
+          label: '表1',
           backgroundColor: '#38a',
           borderColor: '#38a',
+          data:[],
+          fill: false,
+          yAxisID: 'chart_1',
+          lineTension: 0, // 設置為0以禁用曲線
+          borderWidth: 1,
+        },
+        {
+          label: '表2',
+          backgroundColor: '#fa0',
+          borderColor: '#fa0',
           data:[],
           fill: false,
           yAxisID: 'chart_1',
@@ -177,9 +187,13 @@ export default {
       this.renderChart(this.chartdata, optionsCopy);
     },
     getFatherData() {
-      this.chartdata.datasets[0].data = this.apiData;
+      console.log('this.apiData', this.apiData);
+      if(this.apiData.length != 0) {
+        this.chartdata.datasets[0].data = this.apiData[0].dataArr;
+        this.chartdata.datasets[1].data = this.apiData[1].dataArr;
+      }
       this.chartdata.labels = this.xlabels;
-      console.log('this.chartdata.datasets[0].data',this.chartdata.datasets[0].data);
+      
     },
     setXaxis() {
       this.chartdata.labels = this.xlabels;

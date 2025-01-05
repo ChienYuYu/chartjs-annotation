@@ -37,6 +37,7 @@
         const res = await axios.post(url, {})
         console.log('父層call api=>', res);
         this.apiData = await res.data.dataList;
+        
         this.$refs.chart.getFatherData();
         this.showChart = false;
         setTimeout(() => {
