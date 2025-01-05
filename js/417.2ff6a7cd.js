@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkchartjs_annotation"]=self["webpackChunkchartjs_annotation"]||[]).push([[417],{1417:function(n,t,a){a.r(t),a.d(t,{default:function(){return c}});var s=function(){var n=this;n._self._c;return n._m(0)},u=[function(){var n=this,t=n._self._c;return t("div",{staticClass:"about"},[t("h1",[n._v("This is an about page")])])}],r=a(1656),e={},i=(0,r.A)(e,s,u,!1,null,null,null),c=i.exports}}]);
+//# sourceMappingURL=417.2ff6a7cd.js.map
